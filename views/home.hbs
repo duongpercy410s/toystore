@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   
+    body {
+        background-color: wheat;
+        background-image: url('https://gblobscdn.gitbook.com/spaces%2F-M3-IU1k8a0MMGt6Gmx-%2Favatar-1584849384472.png?alt=media');
+    }
+    .conterner {
+        width: 90%;
+        background-color: #FFFFFF;
+        margin-left: 80px;
+        margin-top: 50px;
+        border-style: solid;
+        border-color: red;
+    }
+    .h1 {
+        
+        font-size: 40px;
+        text-align: center;
+    }
+    table {
+        border-collapse: collapse;
+    }
+    .main{
+        margin-left: 50px;
+        margin-bottom: 10px;
+    }
+    }
+   
+</style>
+<div class="conterner">
+     <div class="main">
+<body>
+    <center>
+    <h1 style="color:Blue;" >Devine shop gaming</h1>
+    </center>
+    <br>
+    
+    
+    <button class="new"><a href='/new'>New Product</a></button>
+     <br>
+    <form action="/search" method="post">
+    <pre>
+    Prodcut's name to search <input type="text" name="txtSearch"> <input type="submit" value="Search">  <button class=""><a href='/'>Home</a></button>
+       
+        
+</pre>
+    </form>
+    <br> <br>
+    <table width="60%" border="2">
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Delete</th>
+        </tr>
+        {{#each model}}
+        <tr>
+            <td><a href="edit?pid={{_id}}">{{productName}}  (Press to update) </a></td>
+            <td>{{price}}</td>
+            <td><a href="/delete?pid={{_id}}">delete</a> </td>
+            
+        </tr>
+        
+        {{/each}}
+    </table>
+    <br><br>
+    
+    </div>
+    </div>
+</body>
+</html>

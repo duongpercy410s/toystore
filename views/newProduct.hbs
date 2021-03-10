@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<style>
+    body {
+        background-color: wheat;
+        background-image: url('https://gblobscdn.gitbook.com/spaces%2F-M3-IU1k8a0MMGt6Gmx-%2Favatar-1584849384472.png?alt=media');
+    }
+    
+    
+    .conterner {
+        width: 50%;
+        background-color: #faf8f8;
+        margin-top: 50px;
+        margin-left: 370px;
+        border-style: solid;
+        border-color: red;
+    }
+    }
+    table {
+        border-collapse: collapse;
+    }
+    .main {
+        width: 90%;
+        text-align: center;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+    .add {
+        margin-left: 150px;
+        padding: 10px;
+    }
+    td{
+        padding: 5px;
+    }
+</style>
+
+<body>
+    <div class="conterner">
+    <center>
+    <h1>New Product</h1>
+     <form action="/insert" method="POST">
+     <pre style="font-family: algerian">
+        Product Name <input type="text" name="productName">
+        <br><br>
+        Price        <input type="text" name="price" id=""> </pre>
+        <br><br><pre>
+        <input type="submit" value="Insert">   <button class=""><a href='/'>Home</a></button>
+        </pre><br><br>
+    </form>
+    </center>
+    </div>
+</body>
+</html>

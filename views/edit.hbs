@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<style>
+    body {
+        background-color: wheat;
+        background-image: url('https://gblobscdn.gitbook.com/spaces%2F-M3-IU1k8a0MMGt6Gmx-%2Favatar-1584849384472.png?alt=media');
+    }
+    .Main {
+        width: 30%;
+        background-color: #wheat;
+        text-align: center;
+        margin-left: 450px;
+    }
+    .conterner {
+        width: 50%;
+        background-color: #faf8f8;
+        margin-top: 50px;
+        margin-left: 370px;
+        border-style: solid;
+        border-color: red;
+    }
+    table {
+        margin-left: 75px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+</style>
+<body>
+    <div class="conterner">
+    <center>
+            
+    <h1>Edit product</h1>
+    <form action="/update" method="POST">
+    <pre>
+        
+        <input type="hidden" name="pid" value="{{model._id}}">
+        Product Name <input type="text" name="productName" value="{{model.productName}}">
+        <br><br>
+        Price        <input type="text" name="price" value="{{model.price}}"> 
+        <br><br>
+        <input type="submit" value="Update">   <button class=""><a href='/'>Home</a></button>
+        </pre>
+    </form>
+    </center>
+    
+    </div>
+</body>
+</html>
